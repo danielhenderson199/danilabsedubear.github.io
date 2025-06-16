@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Danilabs National Bear College</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #4a90e2;
+      margin-top: 0;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #eee;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Danilabs National Bear College</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome to Danilabs National Bear College!</h2>
+      <p>
+        We are proud to be the leading institution for bear education and research in the world.
+        Our mission is to empower bears with knowledge, innovation, and a strong community.
+      </p>
+      <p>
+        Join us to explore courses in forest sciences, hibernation studies, honey appreciation,
+        and much more. Our campus is home to a diverse population of bears dedicated to learning
+        and growth.
+      </p>
+    </section>
+
+    <section style="margin-top:2rem;">
+      <h2>Apply Now</h2>
+      <form id="applyForm">
+        <label>
+          Name:<br />
+          <input type="text" name="name" required placeholder="Your full name" style="width:100%; padding:0.5rem; margin-bottom:1rem;" />
+        </label>
+        <label>
+          Email:<br />
+          <input type="email" name="email" required placeholder="Your email" style="width:100%; padding:0.5rem; margin-bottom:1rem;" />
+        </label>
+        <label>
+          Why do you want to join?<br />
+          <textarea name="message" required placeholder="Tell us why..." rows="5" style="width:100%; padding:0.5rem; margin-bottom:1rem;"></textarea>
+        </label>
+        <button type="submit" style="background:#4a90e2; color:white; border:none; padding:0.75rem 1.5rem; font-size:1rem; border-radius:4px; cursor:pointer;">
+          Apply
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Danilabs National Bear College. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('applyForm').onsubmit = async (e) => {
+      e.preventDefault();
+      alert('Thank you for applying to Danilabs National Bear College! We will get back to you soon.');
+      e.target.reset();
+    };
+  </script>
+</body>
+</html>
